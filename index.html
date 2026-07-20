@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream House Real Estate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> 
+ </head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="sticky top-0 z-50 w-full bg-white shadow-sm">
+<nav class="relative bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CU5YTZmuZ1oWsXDkVhJVB0HB_wI-ugkPrCvEAxyu7Q&s" alt="Dream house" class="h-8 w-auto" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+           <a href="index.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
+      <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+      <a href="About.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+   </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">View notifications</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <el-dropdown class="relative ml-3">
+          <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">Open user menu</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYYYmIOuieWvw2LUapfA7Catq3e-NyzpWMPjVoZ32pQ&s=10" alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+          </button>
+
+          <el-menu anchor="top-right" popover class="w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
+          </el-menu>
+        </el-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+     <a href="index.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
+      <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+      <a href="About.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+    </div>
+  </el-disclosure>
+</nav>
+</header>
+
+
+  <section class="bg-cover bg-center h-[500px] flex items-center justify-center" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56sc7mvBbzQKfyIZKnY7hgxBDPHNoQXOqR0d0bEl_8Q&s=10);">
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center">
+      <h2 class="text-4xl font-bold text-white">Find Your Dream Home</h2>
+      <p class="text-gray-200 mt-4">Luxury, comfort, and affordability all in one place.</p>
+      <button class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Browse Listings</button>
+    </div>
+  </section>
+
+  <section class="mx-auto px-6 py-12 sm:w-1/2">
+    <h3 class="text-3xl font-bold mb-8 text-center">Featured Properties</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://cdn.houseplansservices.com/product/rn02c1hbh5ufpha585e313r9dj/w800x533.jpg?v=4" alt="Property" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold">Modern Family Home</h4>
+          <p class="text-gray-600 mt-2">4 Beds • 3 Baths • 2500 sqft</p>
+          <p class="text-blue-600 font-bold mt-4">$350,000</p>
+        </div>
+      </div>
+
+       <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIWaP9z5j6-4XQ05kofgVPiLC-mJmBkTmKdz9yoLi9plMbRHGzZ0SOVy0u&s=10" alt="Property" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold">Mansion</h4>
+          <p class="text-gray-600 mt-2">5 Beds • 3 Baths • 4000 sqft</p>
+          <p class="text-blue-600 font-bold mt-4">$500,000</p>
+        </div>
+      </div>
+       <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://media.istockphoto.com/id/2155901088/photo/exterior-view-of-a-contemporary-new-home-in-los-angeles.jpg?s=612x612&w=0&k=20&c=9uVZiYWqMQjZwz_FhlLFxOucUpzPCJVvtLk7Rz5yqJU=" alt="Property" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold">Modern Duplex</h4>
+          <p class="text-gray-600 mt-2">5 Beds • 5 Baths • 1500 sqft</p>
+          <p class="text-blue-600 font-bold mt-4">$250,000</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="bg-blue-50 py-12">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6 text-center">Get in Touch</h3>
+      <form class="bg-white shadow-md rounded-lg p-8 space-y-6">
+        <input type="text" placeholder="Your Name" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-600">
+        <input type="email" placeholder="Your Email" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-600">
+        <textarea placeholder="Message" rows="4" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-600"></textarea>
+        <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-200 py-6 text-center">
+    <p>&copy; 2026 DreamHomes Real Estate. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Dream Homes Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="sticky top-0 z-50 w-full bg-white shadow-sm">
+<nav class="relative bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CU5YTZmuZ1oWsXDkVhJVB0HB_wI-ugkPrCvEAxyu7Q&s" alt="Dream house" class="h-8 w-auto" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+                      <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+        <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+     <a href="About.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+   </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">View notifications</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <el-dropdown class="relative ml-3">
+          <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">Open user menu</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYYYmIOuieWvw2LUapfA7Catq3e-NyzpWMPjVoZ32pQ&s=10" alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+          </button>
+
+          <el-menu anchor="top-right" popover class="w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
+          </el-menu>
+        </el-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+           <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+        <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+     <a href="About.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+   </div>
+  </el-disclosure>
+</nav>
+</header>
+<section class="py-16 text-center max-w-3xl mx-auto px-6">
+    <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm block mb-2">Our Portfolio</span>
+    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">Architectural Milestones</h1>
+    <p class="text-gray-500 max-w-xl mx-auto">Explore our premier signature developments, luxury residential expansions, and highly optimized commercial complexes across metropolitan hubs.</p>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-6 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-56 w-full bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlpxDm2z-OLfn9iDVW1WaJALtq7IVM1f4uMyAOS1hS1vKDA9Hq4A4CwMlh&s=10" 
+                 alt="The Emerald Horizon Penthouse Complex">
+            <span class="absolute top-4 right-4 bg-emerald-500 text-white font-bold text-xs uppercase tracking-wide px-3 py-1 rounded-full shadow-sm">Completed</span>
+          </div>
+
+
+          <div class="p-6 space-y-4">
+            <div class="flex items-start gap-4">
+        
+              <div class="p-3 bg-blue-50 text-blue-600 rounded-xl shrink-0">
+                <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-lg leading-tight">The Emerald Horizon</h3>
+                <p class="text-gray-400 text-xs mt-0.5">Manhattan, New York</p>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              A 42-story architectural marvel featuring bespoke high-rise residential properties, integrated smart home arrays, and infinity pool structural layouts.
+            </p>
+          </div>
+        </div>
+
+        <div class="px-6 pb-6 pt-2">
+          <a href="#" class="block text-center bg-gray-50 hover:bg-blue-50 text-slate-900 hover:text-blue-600 border border-gray-200 hover:border-blue-200 font-semibold text-sm py-2.5 rounded-xl transition duration-200">View Project Specs</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-56 w-full bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVmsU8-3wSPJZSluoarnQa7jiw0TKh1Uxb1PqWhRKnhmg-UM7kDZ2Pp4&s=10" 
+                 alt="Whispering Pines Villa Estates">
+            <span class="absolute top-4 right-4 bg-blue-600 text-white font-bold text-xs uppercase tracking-wide px-3 py-1 rounded-full shadow-sm">In Progress</span>
+          </div>
+
+             <div class="p-6 space-y-4">
+            <div class="flex items-start gap-4">
+
+              <div class="p-3 bg-blue-50 text-blue-600 rounded-xl shrink-0">
+                <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-lg leading-tight">Whispering Pines</h3>
+                <p class="text-gray-400 text-xs mt-0.5">Austin, Texas</p>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              A private enclave of 15 premium eco-luxury single-family custom estates utilizing fully sustainable zero-emission power grids and open-concept floorplans.
+            </p>
+          </div>
+        </div>
+    
+        <div class="px-6 pb-6 pt-2">
+          <a href="#" class="block text-center bg-gray-50 hover:bg-blue-50 text-slate-900 hover:text-blue-600 border border-gray-200 hover:border-blue-200 font-semibold text-sm py-2.5 rounded-xl transition duration-200">Track Development</a>
+        </div>
+      </div>
+
+
+     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-56 w-full bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                 src="https://videocdn.cdnpk.net/videos/abc459c4-8aab-490c-b94b-770e5c60ff8e/horizontal/thumbnails/small.jpg" 
+                 alt="Apex Commercial Logistical Center">
+            <span class="absolute top-4 right-4 bg-amber-500 text-white font-bold text-xs uppercase tracking-wide px-3 py-1 rounded-full shadow-sm">Planning Phase</span>
+          </div>
+
+
+          <div class="p-6 space-y-4">
+            <div class="flex items-start gap-4">
+              
+              <div class="p-3 bg-blue-50 text-blue-600 rounded-xl shrink-0">
+                <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-lg leading-tight">Apex Corporate Center</h3>
+                <p class="text-gray-400 text-xs mt-0.5">Silicon Valley, California</p>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              An upcoming 250,000 sq. ft. commercial tech hub featuring modular corporate co-working environments and enterprise corporate leasing solutions.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#" class="block text-center bg-gray-50 hover:bg-blue-50 text-slate-900 hover:text-blue-600 border border-gray-200 hover:border-blue-200 font-semibold text-sm py-2.5 rounded-xl transition duration-200">Request Investor Deck</a>
+        </div>
+      </div>
+    </div>
+  </main>
+<footer class="bg-gray-800 text-gray-200 py-6 text-center">
+    <p>&copy; 2026 DreamHomes Real Estate. All rights reserved.</p>
+  </footer>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Dream Homes Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="sticky top-0 z-50 w-full bg-white shadow-sm">
+<nav class="relative bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CU5YTZmuZ1oWsXDkVhJVB0HB_wI-ugkPrCvEAxyu7Q&s" alt="Dream house" class="h-8 w-auto" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+                      <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+        <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+     <a href="About.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+   </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">View notifications</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <el-dropdown class="relative ml-3">
+          <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">Open user menu</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYYYmIOuieWvw2LUapfA7Catq3e-NyzpWMPjVoZ32pQ&s=10" alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+          </button>
+
+          <el-menu anchor="top-right" popover class="w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
+          </el-menu>
+        </el-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+           <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+        <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+     <a href="About.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+   </div>
+  </el-disclosure>
+</nav>
+</header>
+<section class="py-16 text-center max-w-3xl mx-auto px-6">
+    <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm block mb-2">Our Portfolio</span>
+    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">Architectural Milestones</h1>
+    <p class="text-gray-500 max-w-xl mx-auto">Explore our premier signature developments, luxury residential expansions, and highly optimized commercial complexes across metropolitan hubs.</p>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-6 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-56 w-full bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlpxDm2z-OLfn9iDVW1WaJALtq7IVM1f4uMyAOS1hS1vKDA9Hq4A4CwMlh&s=10" 
+                 alt="The Emerald Horizon Penthouse Complex">
+            <span class="absolute top-4 right-4 bg-emerald-500 text-white font-bold text-xs uppercase tracking-wide px-3 py-1 rounded-full shadow-sm">Completed</span>
+          </div>
+
+
+          <div class="p-6 space-y-4">
+            <div class="flex items-start gap-4">
+        
+              <div class="p-3 bg-blue-50 text-blue-600 rounded-xl shrink-0">
+                <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-lg leading-tight">The Emerald Horizon</h3>
+                <p class="text-gray-400 text-xs mt-0.5">Manhattan, New York</p>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              A 42-story architectural marvel featuring bespoke high-rise residential properties, integrated smart home arrays, and infinity pool structural layouts.
+            </p>
+          </div>
+        </div>
+
+        <div class="px-6 pb-6 pt-2">
+          <a href="#" class="block text-center bg-gray-50 hover:bg-blue-50 text-slate-900 hover:text-blue-600 border border-gray-200 hover:border-blue-200 font-semibold text-sm py-2.5 rounded-xl transition duration-200">View Project Specs</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-56 w-full bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVmsU8-3wSPJZSluoarnQa7jiw0TKh1Uxb1PqWhRKnhmg-UM7kDZ2Pp4&s=10" 
+                 alt="Whispering Pines Villa Estates">
+            <span class="absolute top-4 right-4 bg-blue-600 text-white font-bold text-xs uppercase tracking-wide px-3 py-1 rounded-full shadow-sm">In Progress</span>
+          </div>
+
+             <div class="p-6 space-y-4">
+            <div class="flex items-start gap-4">
+
+              <div class="p-3 bg-blue-50 text-blue-600 rounded-xl shrink-0">
+                <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-lg leading-tight">Whispering Pines</h3>
+                <p class="text-gray-400 text-xs mt-0.5">Austin, Texas</p>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              A private enclave of 15 premium eco-luxury single-family custom estates utilizing fully sustainable zero-emission power grids and open-concept floorplans.
+            </p>
+          </div>
+        </div>
+    
+        <div class="px-6 pb-6 pt-2">
+          <a href="#" class="block text-center bg-gray-50 hover:bg-blue-50 text-slate-900 hover:text-blue-600 border border-gray-200 hover:border-blue-200 font-semibold text-sm py-2.5 rounded-xl transition duration-200">Track Development</a>
+        </div>
+      </div>
+
+
+     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-56 w-full bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                 src="https://videocdn.cdnpk.net/videos/abc459c4-8aab-490c-b94b-770e5c60ff8e/horizontal/thumbnails/small.jpg" 
+                 alt="Apex Commercial Logistical Center">
+            <span class="absolute top-4 right-4 bg-amber-500 text-white font-bold text-xs uppercase tracking-wide px-3 py-1 rounded-full shadow-sm">Planning Phase</span>
+          </div>
+
+
+          <div class="p-6 space-y-4">
+            <div class="flex items-start gap-4">
+              
+              <div class="p-3 bg-blue-50 text-blue-600 rounded-xl shrink-0">
+                <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-lg leading-tight">Apex Corporate Center</h3>
+                <p class="text-gray-400 text-xs mt-0.5">Silicon Valley, California</p>
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              An upcoming 250,000 sq. ft. commercial tech hub featuring modular corporate co-working environments and enterprise corporate leasing solutions.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#" class="block text-center bg-gray-50 hover:bg-blue-50 text-slate-900 hover:text-blue-600 border border-gray-200 hover:border-blue-200 font-semibold text-sm py-2.5 rounded-xl transition duration-200">Request Investor Deck</a>
+        </div>
+      </div>
+    </div>
+  </main>
+<footer class="bg-gray-800 text-gray-200 py-6 text-center">
+    <p>&copy; 2026 DreamHomes Real Estate. All rights reserved.</p>
+  </footer>
+</body>
+</html>

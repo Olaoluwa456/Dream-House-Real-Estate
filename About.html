@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Dream House Real Estate</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> 
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+<header class="sticky top-0 z-50 w-full bg-white shadow-sm">
+<nav class="relative bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CU5YTZmuZ1oWsXDkVhJVB0HB_wI-ugkPrCvEAxyu7Q&s" alt="Dream house" class="h-8 w-auto" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+    <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+      <a href="About.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+     
+   </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">View notifications</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <el-dropdown class="relative ml-3">
+          <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">Open user menu</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYYYmIOuieWvw2LUapfA7Catq3e-NyzpWMPjVoZ32pQ&s=10" alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+          </button>
+
+          <el-menu anchor="top-right" popover class="w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
+          </el-menu>
+        </el-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+    <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+      <a href="About.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+      </div>
+  </el-disclosure>
+</nav>
+</header>
+
+  <section class="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
+    <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+    <div class="relative max-w-7xl mx-auto px-6 text-center z-10">
+      <span class="text-blue-400 font-semibold uppercase tracking-wider text-sm block mb-3">Who We Are</span>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+        Guiding You to Your <span class="text-blue-400">Dream House</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg text-gray-300">
+        At Dream House Real Estate, we do more than match properties with buyers. We connect people with the spaces where their life stories unfold.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <div class="grid grid-cols-2 gap-4">
+        <img class="w-full h-64 object-cover rounded-2xl shadow-md transform translate-y-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPkacd_-lu3rpr5XG8t6BhPG86w7br3s-zcIMfT-fDPCiPnBw11TdatKZG&s=10" alt="Luxury Living Room">
+        <img class="w-full h-64 object-cover rounded-2xl shadow-md" src="https://i.pinimg.com/474x/a5/dc/86/a5dc8602a49ad009cd09f8046152c211.jpg" alt="Modern House Exterior">
+      </div>
+      
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Redefining the Real Estate Journey Since 2015</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Founded on the values of transparency, integrity, and relentless client focus, Dream House Real Estate has grown from a boutique agency into a market leader. We leverage cutting-edge market insights to provide a seamless buying, selling, or renting experience.
+        </p>
+        
+        <div class="space-y-4 pt-4">
+          <div class="flex items-start gap-4">
+            <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+              <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900">Uncompromising Integrity</h3>
+              <p class="text-gray-500 text-sm">Honest evaluations, no hidden agendas, and fully transparent transactions.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+              <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900">Innovation & Strategy</h3>
+              <p class="text-gray-500 text-sm">Utilizing virtual tours, AI market analytics, and hyper-targeted digital marketing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">10k+</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">Properties Sold</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">$4B+</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">In Volume</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">99%</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">Happy Clients</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">150+</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">Expert Agents</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">Meet Our Experts</h2>
+        <p class="text-gray-600">The dedicated professionals making your property dreams a living reality.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+          <img class="w-full h-80 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezOAf_TeuSjH0JnG64GxaO5xPtyHeYBFlDO8_N9p0I_4bMJBgdXU4Cr_j&s=10" alt="CEO Portrait">
+          <div class="p-6 text-center">
+            <h3 class="font-bold text-xl text-slate-900">Marcus Sterling</h3>
+            <p class="text-blue-600 text-sm font-medium mb-3">Founder & CEO</p>
+            <p class="text-gray-500 text-sm">20+ years of luxury real estate experience across global metropolitan markets.</p>
+          </div>
+        </div>
+
+        
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+          <img class="w-full h-80 object-cover" src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/67363257f3ab95001dd5daba.png" alt="Agent Portrait">
+          <div class="p-6 text-center">
+            <h3 class="font-bold text-xl text-slate-900">Sarah Jenkins</h3>
+            <p class="text-blue-600 text-sm font-medium mb-3">Lead Managing Broker</p>
+            <p class="text-gray-500 text-sm">Specializes in suburban residential expansions and investment portfolios.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+          <img class="w-full h-80 object-cover" src="https://cdn.leonardo.ai/users/d1bc19b4-63e7-492d-8872-2c46bf71026c/generations/1f1727c1-46dd-6710-b7a0-266c4d4a9886/lucid-origin_Ultra-photorealistic_corporate_portrait_of_a_Black_African_man_approximately_34_-0.jpg" alt="Agent Portrait">
+          <div class="p-6 text-center">
+            <h3 class="font-bold text-xl text-slate-900">David Vance</h3>
+            <p class="text-blue-600 text-sm font-medium mb-3">Head of Commercial Properties</p>
+            <p class="text-gray-500 text-sm">An expert in commercial zoning, retail acquisitions, and corporate leasing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20 text-center max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Ready to Find Your Place?</h2>
+    <p class="text-gray-600 mb-8 max-w-xl mx-auto">Let our experts help you navigate the landscape and lock down the terms you deserve.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition duration-200">Browse Listings</a>
+      <a href="#" class="border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white font-semibold px-8 py-3 rounded-xl transition duration-200">Contact an Agent</a>
+    </div>
+  </section>
+<footer class="bg-gray-800 text-gray-200 py-6 text-center">
+    <p>&copy; 2026 DreamHomes Real Estate. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Dream House Real Estate</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> 
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+<header class="sticky top-0 z-50 w-full bg-white shadow-sm">
+<nav class="relative bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CU5YTZmuZ1oWsXDkVhJVB0HB_wI-ugkPrCvEAxyu7Q&s" alt="Dream house" class="h-8 w-auto" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+    <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+      <a href="About.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+     
+   </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">View notifications</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <el-dropdown class="relative ml-3">
+          <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">Open user menu</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYYYmIOuieWvw2LUapfA7Catq3e-NyzpWMPjVoZ32pQ&s=10" alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+          </button>
+
+          <el-menu anchor="top-right" popover class="w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
+          </el-menu>
+        </el-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+    <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+       <a href="Team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+      <a href="Projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="Contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+      <a href="About.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+      </div>
+  </el-disclosure>
+</nav>
+</header>
+
+  <section class="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
+    <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+    <div class="relative max-w-7xl mx-auto px-6 text-center z-10">
+      <span class="text-blue-400 font-semibold uppercase tracking-wider text-sm block mb-3">Who We Are</span>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+        Guiding You to Your <span class="text-blue-400">Dream House</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg text-gray-300">
+        At Dream House Real Estate, we do more than match properties with buyers. We connect people with the spaces where their life stories unfold.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <div class="grid grid-cols-2 gap-4">
+        <img class="w-full h-64 object-cover rounded-2xl shadow-md transform translate-y-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPkacd_-lu3rpr5XG8t6BhPG86w7br3s-zcIMfT-fDPCiPnBw11TdatKZG&s=10" alt="Luxury Living Room">
+        <img class="w-full h-64 object-cover rounded-2xl shadow-md" src="https://i.pinimg.com/474x/a5/dc/86/a5dc8602a49ad009cd09f8046152c211.jpg" alt="Modern House Exterior">
+      </div>
+      
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Redefining the Real Estate Journey Since 2015</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Founded on the values of transparency, integrity, and relentless client focus, Dream House Real Estate has grown from a boutique agency into a market leader. We leverage cutting-edge market insights to provide a seamless buying, selling, or renting experience.
+        </p>
+        
+        <div class="space-y-4 pt-4">
+          <div class="flex items-start gap-4">
+            <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+              <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900">Uncompromising Integrity</h3>
+              <p class="text-gray-500 text-sm">Honest evaluations, no hidden agendas, and fully transparent transactions.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+              <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900">Innovation & Strategy</h3>
+              <p class="text-gray-500 text-sm">Utilizing virtual tours, AI market analytics, and hyper-targeted digital marketing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">10k+</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">Properties Sold</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">$4B+</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">In Volume</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">99%</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">Happy Clients</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-extrabold mb-1">150+</p>
+        <p class="text-blue-100 text-sm uppercase font-medium tracking-wider">Expert Agents</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">Meet Our Experts</h2>
+        <p class="text-gray-600">The dedicated professionals making your property dreams a living reality.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+          <img class="w-full h-80 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezOAf_TeuSjH0JnG64GxaO5xPtyHeYBFlDO8_N9p0I_4bMJBgdXU4Cr_j&s=10" alt="CEO Portrait">
+          <div class="p-6 text-center">
+            <h3 class="font-bold text-xl text-slate-900">Marcus Sterling</h3>
+            <p class="text-blue-600 text-sm font-medium mb-3">Founder & CEO</p>
+            <p class="text-gray-500 text-sm">20+ years of luxury real estate experience across global metropolitan markets.</p>
+          </div>
+        </div>
+
+        
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+          <img class="w-full h-80 object-cover" src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/67363257f3ab95001dd5daba.png" alt="Agent Portrait">
+          <div class="p-6 text-center">
+            <h3 class="font-bold text-xl text-slate-900">Sarah Jenkins</h3>
+            <p class="text-blue-600 text-sm font-medium mb-3">Lead Managing Broker</p>
+            <p class="text-gray-500 text-sm">Specializes in suburban residential expansions and investment portfolios.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+          <img class="w-full h-80 object-cover" src="https://cdn.leonardo.ai/users/d1bc19b4-63e7-492d-8872-2c46bf71026c/generations/1f1727c1-46dd-6710-b7a0-266c4d4a9886/lucid-origin_Ultra-photorealistic_corporate_portrait_of_a_Black_African_man_approximately_34_-0.jpg" alt="Agent Portrait">
+          <div class="p-6 text-center">
+            <h3 class="font-bold text-xl text-slate-900">David Vance</h3>
+            <p class="text-blue-600 text-sm font-medium mb-3">Head of Commercial Properties</p>
+            <p class="text-gray-500 text-sm">An expert in commercial zoning, retail acquisitions, and corporate leasing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20 text-center max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Ready to Find Your Place?</h2>
+    <p class="text-gray-600 mb-8 max-w-xl mx-auto">Let our experts help you navigate the landscape and lock down the terms you deserve.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition duration-200">Browse Listings</a>
+      <a href="#" class="border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white font-semibold px-8 py-3 rounded-xl transition duration-200">Contact an Agent</a>
+    </div>
+  </section>
+<footer class="bg-gray-800 text-gray-200 py-6 text-center">
+    <p>&copy; 2026 DreamHomes Real Estate. All rights reserved.</p>
+  </footer>
+</body>
+</html>
